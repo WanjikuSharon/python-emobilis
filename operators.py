@@ -15,10 +15,14 @@ z = 4
 s = 11
 print(s==7)
 #Logical operators/Class Asignment
-sharon = 22
-phillip = 24
-allan = 13
-ivy = 21
+sharon = int(input("Sharon Enter Age: "))
+print(sharon)
+phillip = int(input("Phillip Enter Age: "))
+print(phillip)
+allan = int(input("Allan Enter Age: "))
+print(allan)
+ivy = int(input("Ivy Enter Age: "))
+print(ivy)
 
 print(sharon >= 22 and phillip <= 24)
 print(sharon > 21 and phillip < 24)
