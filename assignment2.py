@@ -16,5 +16,18 @@ user_name = input("Please enter your name: ")
 # Call the function with the user input
 print(greet(user_name))
 # write a python program that finds a maximum of three numbers
+def maximum(one, two, three):
+    # Use the built-in max() function to find the largest number
+    return max(one, two, three)
+
+# Test the function with example inputs
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+num3 = float(input("Enter the third number: "))
+
+# Call the function and display the result
+print(f"The maximum of the three numbers is: {maximum(num1, num2, num3)}")
+
+
 
 # create a python function that sums all numbers in a list
