@@ -31,3 +31,13 @@ print(f"The maximum of the three numbers is: {maximum(num1, num2, num3)}")
 
 
 # create a python function that sums all numbers in a list
+def my_list(numbers):
+    # Use the built-in sum function to sum all numbers in the list
+    total = sum(numbers)
+    return f"The sum of the numbers is {total}"
+
+# Create a list of numbers
+numbers = [1, 2, 3, 4, 5, 6, 7]
+
+# Call the function and print the result
+print(my_list(numbers))
