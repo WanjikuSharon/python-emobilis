@@ -11,3 +11,9 @@ def my_family(name):
 my_family("Sharon")
 my_family("Allan")
 my_family("Jasmine")
+
+#Arbitrary Arguments
+def my_function(*kids):
+  print("The youngest child is " + kids[2])
+
+my_function("Emil", "Tobias", "Linus")
