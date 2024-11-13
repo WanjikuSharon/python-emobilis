@@ -23,7 +23,20 @@ my_function("Emil", "Tobias", "Linus")
 def my_summation(one, two):
     # Ensure the arguments are treated as numbers
     result = int(one) + int(two)
-    print(f"The sum is {result}")
+    return result
+    #print(f"The sum is {result}")
 
 # Call the function with valid arguments
-my_summation(8, 9)
+print(my_summation(8, 9))
+
+def promote(name, age):
+    if age > 18 and age < 23:
+        return f"{name} you are {age} and you are promoted to University"
+
+    elif age >= 24:
+        return f"{name} you are {age} and you are promoted to work environment"
+    else:
+        return f"{name} you are {age} and you are supposed to be in highschool"
+
+
+print(promote("Sharon", 16))

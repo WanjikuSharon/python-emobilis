@@ -30,3 +30,4 @@ else:
 # Calculate the total withdrawal after discount
 Total_Withdrawal = Withdrawal_Amount - Discount
 print("Total amount after discount: " + str(Total_Withdrawal))
+
