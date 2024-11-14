@@ -18,6 +18,7 @@ class Person:
     def display_name(self):
         print(f"I am {self.name}")
 
+#Assignment
 class Vehicle:
     def __init__(self, make, model, year, color, fuel_type):
         self.make = make
@@ -58,6 +59,17 @@ class Rectangle:
         Display the length and width of the rectangle.
         """
         print(f"The length is {self.length} m and the width is {self.width} m")
+#End of the above assignment
+
+#Inheritance
+class Employee:#parent class
+    def __init__(self, name, age, gender, salary):
+        self.name = name
+        self.age = age
+        self.gender = gender
+        self.salary = salary
+
+class Manager(Employee):#child
 
 
 
