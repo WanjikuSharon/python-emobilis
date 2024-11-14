@@ -27,20 +27,40 @@ class Vehicle:
         self.fuel_type = fuel_type
 
 class Rectangle:
-    def __init__(self,length,width):
+    """
+    A class to represent a rectangle with methods to calculate perimeter,
+    area, and display dimensions.
+    """
+    def __init__(self, length, width):
+        """
+        Initialize the rectangle with length and width.
+        Ensures length and width are positive numbers.
+        """
+        if length <= 0 or width <= 0:
+            raise ValueError("Length and width must be positive numbers.")
         self.length = length
         self.width = width
 
     def perimeter(self):
-        pm = self.width + self.length + self.length + self.width
-        print(f"The perimeter is {pm} m")
+        """
+        Calculate and return the perimeter of the rectangle.
+        """
+        return 2 * (self.length + self.width)
 
     def area(self):
-        ar = self.width * self.length
-        print(f"The area is {ar} metres square")
+        """
+        Calculate and return the area of the rectangle.
+        """
+        return self.length * self.width
 
     def display_measurement(self):
-        print(f"The length is {self.length} and Width is {self.width}")
+        """
+        Display the length and width of the rectangle.
+        """
+        print(f"The length is {self.length} m and the width is {self.width} m")
+
+
+
 
 
 
