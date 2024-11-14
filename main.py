@@ -98,3 +98,13 @@ class HoursEmployee(Employee):
 
     def calculate_payroll(self):
         return (self.hours_worked * self.hourly_rate) + self.salary
+
+class CommissionEmployee(SalaryEmployee):
+    def __init__(self,name,age,gender,salary,weekly_salary,commission):
+        super().__init__(name,age,gender,salary,weekly_salary)
+        self.commission = commission
+
+    #method inherited also from child
+    def calculate_payroll(self):
+        fixed = super().calculate_payroll()
+        return fixed + self.commission

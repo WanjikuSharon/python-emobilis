@@ -1,4 +1,4 @@
-from main import Employee, Manager, Developer, SalaryEmployee, HoursEmployee
+from main import Employee, Manager, Developer, SalaryEmployee, HoursEmployee, CommissionEmployee
 
 #parent class object implementation
 accountant = Employee("Sharon Wanjiku", 22, "Female", "30,000")
@@ -29,5 +29,11 @@ accountant2 = HoursEmployee("Harun Simwa", "45", "Male", 100000000, 45, 4000)
 
 #methods
 print(accountant2.calculate_payroll())
+
+#Commisioned employee
+accountant3 = CommissionEmployee("Blessings Mel", 34,"Female", 500000, 100000, 40000)
+
+#method
+print(accountant3.calculate_payroll())
 
 
