@@ -18,6 +18,7 @@ print(bro.name)
 print(f"Name: {dad.name}, Gender: {dad.gender}, Marital Status: {dad.marital_status}, Occupation: {dad.occupation}")
 
 dad.salutation()
+bro.display_name()
 
 my_mums = Vehicle("Toyota", "Corolla", 2022, "Blue", "Petrol")
 my_dads = Vehicle("BMW", "X5", 2021, "Purple", "Petrol" )

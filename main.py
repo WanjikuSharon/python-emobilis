@@ -15,6 +15,9 @@ class Person:
     def salutation(self):
         print(f"Good morning {self.name}, you are a {self.gender} and you are {self.marital_status}")
 
+    def display_name(self):
+        print(f"I am {self.name}")
+
 class Vehicle:
     def __init__(self, make, model, year, color, fuel_type):
         self.make = make
