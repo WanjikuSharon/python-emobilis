@@ -11,3 +11,11 @@ class Person:
         self.gender = gender
         self.marital_status = marital_status
         self.occupation = occupation
+
+class Vehicle:
+    def __init__(self, make, model, year, color, fuel_type):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.color = color
+        self.fuel_type = fuel_type
