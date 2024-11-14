@@ -12,6 +12,9 @@ class Person:
         self.marital_status = marital_status
         self.occupation = occupation
 
+    def salutation(self):
+        print(f"Good morning {self.name}, you are a {self.gender} and you are {self.marital_status}")
+
 class Vehicle:
     def __init__(self, make, model, year, color, fuel_type):
         self.make = make
@@ -19,3 +22,4 @@ class Vehicle:
         self.year = year
         self.color = color
         self.fuel_type = fuel_type
+
