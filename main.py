@@ -95,3 +95,6 @@ class HoursEmployee(Employee):
         super().__init__(name,age,gender,salary)
         self.hours_worked = hours_worked
         self.hourly_rate = hourly_rate
+
+    def calculate_payroll(self):
+        return (self.hours_worked * self.hourly_rate) + self.salary

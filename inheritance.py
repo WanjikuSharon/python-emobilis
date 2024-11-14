@@ -21,7 +21,13 @@ print(web_dev.display())
 #salary employee
 accountant1 = SalaryEmployee("Lydia Simwa", 32, "Female", 100000, 30000)
 
+#method
+print(accountant1.calculate_payroll())
+
 #HourlyEmployee
 accountant2 = HoursEmployee("Harun Simwa", "45", "Male", 100000000, 45, 4000)
+
+#methods
+print(accountant2.calculate_payroll())
 
 
