@@ -108,3 +108,9 @@ class CommissionEmployee(SalaryEmployee):
     def calculate_payroll(self):
         fixed = super().calculate_payroll()
         return fixed + self.commission
+
+#Assignment on Bank Account
+class BankAccount:
+    def __init__(self, name,age,balance,account_number,account_balance):
+        self.name = name
+        self.age = age
