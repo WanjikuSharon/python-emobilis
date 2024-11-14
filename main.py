@@ -114,3 +114,12 @@ class BankAccount:
     def __init__(self, name,age,balance,account_number,account_balance):
         self.name = name
         self.age = age
+        self.balance = balance
+        self.account_number = account_number
+        self.account_balance = account_balance
+
+    def display_account(self):
+        return f"{self.name} you have kes {self.account_balance} in your account"
+
+class Deposit(BankAccount):
+    def __init__(self,name,age,balance,account_number,account_balance,deposit_amount):
