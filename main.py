@@ -70,7 +70,7 @@ class Employee:#parent class
         self.salary = salary
 #Custom Function
     def display(self):
-        print(f"I am {self.name} and I am {self.age} years old")
+        return f"I am {self.name} and I am {self.age} years old"
 
 class Manager(Employee):#child
     def __init__(self, name,age,gender,salary,education_level):
