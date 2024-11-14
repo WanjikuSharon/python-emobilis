@@ -84,3 +84,8 @@ class SalaryEmployee(Employee):
         super().__init__(name,age,gender,salary)
         self.weekly_salary = weekly_salary
 
+class HoursEmployee(Employee):
+    def __init__(self, name,age,gender,salary,hours_worked,hourly_rate):
+        super().__init__(name,age,gender,salary)
+        self.hours_worked = hours_worked
+        self.hourly_rate = hourly_rate
