@@ -108,7 +108,8 @@ class CommissionEmployee(SalaryEmployee):
     def calculate_payroll(self):
         fixed = super().calculate_payroll()
         return fixed + self.commission
-
+""""
+This was my code had few errors only at applying withdrawal method
 #Assignment on Bank Account
 class BankAccount:
     def __init__(self, name,age,balance,account_number,account_balance):
@@ -125,19 +126,76 @@ class Deposit(BankAccount):
     def __init__(self,name,age,balance,account_number,account_balance,deposit_amount):
         super().__init__(name,age,balance,account_number,account_balance)
         self.deposit_amount = deposit_amount
-        #updating account balance
-        self.account_balance = self.deposit_amount + self.account_balance
 
+
+    def account_balanceh(self):
+        # updating account balance
+        self.account_balance = self.deposit_amount + self.account_balance
+        return f"{self.name} your new account balance is {self.account_balance}"
+
+class Withdrawal(BankAccount):
+    def __init__(self,name,age,balance,account_number,account_balance, amount_withdrawing):
+        super().__init__(name, age, balance, account_number, account_balance)
+        self.amount_withdrawing = amount_withdrawing
+
+
+
+    def display_withdrawing_amount(self):
+        return f"{self.name} you are withdrawing {self.amount_withdrawing}"
+
+    def bankfees(self):
+        remaining_balance = self.account_balance - self.amount_withdrawing
+        fees = 0.05 * remaining_balance
+        return fees
+#Ends here and improved code is the next
+"""
+class BankAccount:
+    def __init__(self, name, age, account_number, account_balance):
+        """
+        Initialize the bank account with customer details.
+        """
+        self.name = name
+        self.age = age
+        self.account_number = account_number
+        self.account_balance = account_balance
+
+    def display_account(self):
+        """
+        Display the account holder's details and current balance.
+        """
+        return f"{self.name}, you have KES {self.account_balance} in your account."
+
+    def apply_bank_fees(self):
+        """
+        Apply a 5% bank fee on the current account balance.
+        """
+        fees = 0.05 * self.account_balance
+        self.account_balance -= fees
+        return f"Bank fees of KES {fees:.2f} applied. New balance is KES {self.account_balance:.2f}."
+
+    def deposit(self, deposit_amount):
+        """
+        Deposit a specified amount to the account.
+        """
+        self.account_balance += deposit_amount
+        return f"{self.name}, you deposited KES {deposit_amount}. New balance is KES {self.account_balance}."
+
+    def withdraw(self, withdrawal_amount):
+        """
+        Withdraw a specified amount from the account, ensuring sufficient balance.
+        """
+        if withdrawal_amount > self.account_balance:
+            return f"Insufficient funds! Your balance is KES {self.account_balance}."
+        else:
+            self.account_balance -= withdrawal_amount
+            return f"{self.name}, you withdrew KES {withdrawal_amount}. New balance is KES {self.account_balance}."
+
+
+class Deposit(BankAccount):
+    pass  # Inherits all methods from BankAccount
 
 
 class Withdrawal(BankAccount):
-    def __init__(self,name,age,balance,account_number,account_balance, amount_withdrawing, remaining_balance):
-        super().__init__(name, age, balance, account_number, account_balance)
-        self.amount_withdrawing = amount_withdrawing
-        self.remaining_balance = remaining_balance
+    pass  # Inherits all methods from BankAccount
 
-        self.remaining_balance = self.account_balance - self.amount_withdrawing
-
-    def bankfees(self):
-        fees = 0.05 * self.account_balance
-        return fees
+#This improved code applies to a single person for each method
