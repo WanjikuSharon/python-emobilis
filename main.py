@@ -26,3 +26,21 @@ class Vehicle:
         self.color = color
         self.fuel_type = fuel_type
 
+class Rectangle:
+    def __init__(self,length,width):
+        self.length = length
+        self.width = width
+
+    def perimeter(self):
+        pm = self.width + self.length + self.length + self.width
+        print(f"The perimeter is {pm} m")
+
+    def area(self):
+        ar = self.width * self.length
+        print(f"The area is {ar} metres square")
+
+    def display_measurement(self):
+        print(f"The length is {self.length} and Width is {self.width}")
+
+
+
