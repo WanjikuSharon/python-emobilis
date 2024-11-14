@@ -1,4 +1,4 @@
-from main import Employee, Manager, Developer
+from main import Employee, Manager, Developer, SalaryEmployee, HoursEmployee
 
 #parent class object implementation
 accountant = Employee("Sharon Wanjiku", 22, "Female", "30,000")
@@ -19,5 +19,9 @@ mobile_dev = Developer("Jin Shine", 21,"Male", 10000000, "Dart")
 print(web_dev.display())
 
 #salary employee
+accountant1 = SalaryEmployee("Lydia Simwa", 32, "Female", 100000, 30000)
+
+#HourlyEmployee
+accountant2 = HoursEmployee("Harun Simwa", "45", "Male", 100000000, 45, 4000)
 
 

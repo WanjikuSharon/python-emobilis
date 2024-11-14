@@ -87,6 +87,9 @@ class SalaryEmployee(Employee):
         super().__init__(name,age,gender,salary)
         self.weekly_salary = weekly_salary
 
+    def calculate_payroll(self):
+        return self.weekly_salary + self.salary
+
 class HoursEmployee(Employee):
     def __init__(self, name,age,gender,salary,hours_worked,hourly_rate):
         super().__init__(name,age,gender,salary)
