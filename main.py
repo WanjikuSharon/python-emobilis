@@ -123,3 +123,21 @@ class BankAccount:
 
 class Deposit(BankAccount):
     def __init__(self,name,age,balance,account_number,account_balance,deposit_amount):
+        super().__init__(name,age,balance,account_number,account_balance)
+        self.deposit_amount = deposit_amount
+        #updating account balance
+        self.account_balance = self.deposit_amount + self.account_balance
+
+
+
+class Withdrawal(BankAccount):
+    def __init__(self,name,age,balance,account_number,account_balance, amount_withdrawing, remaining_balance):
+        super().__init__(name, age, balance, account_number, account_balance)
+        self.amount_withdrawing = amount_withdrawing
+        self.remaining_balance = remaining_balance
+
+        self.remaining_balance = self.account_balance - self.amount_withdrawing
+
+    def bankfees(self):
+        fees = 0.05 * self.account_balance
+        return fees
