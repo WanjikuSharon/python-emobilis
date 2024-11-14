@@ -12,3 +12,6 @@ sob = Manager("Xanthe Wanjiku", 24,"Female", 10000000,"Doctorate")
 web_dev = Developer("Aurora Rora", 28, "Female", 40000, "Python")
 mobile_dev = Developer("Jin Shine", 21,"Male", 10000000, "Dart")
 
+#salary employee
+
+

@@ -78,3 +78,9 @@ class Developer(Employee):
     def __init__(self, name, age, gender, salary, langauge):
         super().__init__(name,age,gender,salary)
         self.language = langauge
+
+class SalaryEmployee(Employee):
+    def __init__(self, name,age,gender,salary,weekly_salary):
+        super().__init__(name,age,gender,salary)
+        self.weekly_salary = weekly_salary
+
