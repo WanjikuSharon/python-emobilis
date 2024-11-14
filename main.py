@@ -73,3 +73,8 @@ class Manager(Employee):#child
     def __init__(self, name,age,gender,salary,education_level):
         super().__init__(name,age,gender,salary)
         self.education_level = education_level
+
+class Developer(Employee):
+    def __init__(self, name, age, gender, salary, langauge):
+        super().__init__(name,age,gender,salary)
+        self.language = langauge
